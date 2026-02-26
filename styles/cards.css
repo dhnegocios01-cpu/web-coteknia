@@ -1,0 +1,137 @@
+/* Tarjetas y elementos visuales modernos */
+
+.service-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(24, 0, 173, 0.18);
+    position: relative;
+    box-shadow: 0 20px 60px rgba(12, 17, 30, 0.08);
+    opacity: 1 !important;
+    transform: none !important;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 28px 80px rgba(24, 0, 173, 0.22);
+    border-color: rgba(0, 191, 99, 0.4);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-shadow: 0 10px 24px rgba(24, 0, 173, 0.18);
+}
+
+.service-card p {
+    color: #1f2735;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+    letter-spacing: 0.01em;
+}
+
+/* Sección de servicios moderna */
+#services {
+    background: transparent;
+    padding: var(--spacing-xxl) var(--spacing-lg);
+}
+
+.services-header h2 {
+    font-size: var(--font-size-h2);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    text-shadow: 0 14px 30px rgba(24, 0, 173, 0.2);
+}
+
+.services-header p {
+    text-align: center;
+    color: #1e2633;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xxl);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.01em;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Botones mejorados */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+.service-card::after {
+    content: '';
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: linear-gradient(135deg, rgba(24, 0, 173, 0.08), rgba(0, 191, 99, 0.08));
+    opacity: 0;
+    transition: var(--transition);
+    z-index: 0;
+}
+
+.service-card:hover::after {
+    opacity: 1;
+}
+
+/* Gradient text para títulos */
+.gradient-text {
+    background: var(--color-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

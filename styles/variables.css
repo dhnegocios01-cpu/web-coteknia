@@ -1,0 +1,41 @@
+:root {
+    /* Paleta de colores del logo Coteknia */
+    --color-primary: #1800ad;        /* Azul violeta */
+    --color-accent: #00bf63;         /* Verde esmeralda */
+    --color-dark: #000000;           /* Negro puro */
+    --color-gray: #737373;           /* Gris */
+    --color-white: #fefeff;          /* Blanco */
+    --color-light-bg: #f8f9ff;       /* Fondo ligeramente azulado */
+    --color-gradient: linear-gradient(135deg, #1800ad 0%, #00bf63 100%);
+    --color-gradient-reverse: linear-gradient(135deg, #00bf63 0%, #1800ad 100%);
+    
+    /* Tipografía */
+    --font-primary: 'Batangas', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-base: 16px;
+    --font-size-h1: 4rem;
+    --font-size-h2: 2.8rem;
+    --font-size-h3: 1.75rem;
+    
+    /* Espaciado */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    
+    /* Transiciones */
+    --transition: all 0.3s ease;
+    --transition-slow: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 8px rgba(24, 0, 173, 0.08);
+    --shadow-md: 0 8px 24px rgba(24, 0, 173, 0.12);
+    --shadow-lg: 0 16px 48px rgba(24, 0, 173, 0.18);
+    --shadow-xl: 0 24px 60px rgba(124, 255, 69, 0.15);
+    
+    /* Bordes */
+    --border-radius: 8px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 24px;
+}

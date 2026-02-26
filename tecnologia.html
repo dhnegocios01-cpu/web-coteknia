@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnología - Coteknia</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Batangas&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="header"></header>
+
+    <!-- Service Detail Section -->
+    <section id="about-us" style="padding-top: 100px;">
+        <div class="container">
+            <div class="about-header">
+                <div class="about-badge">💻 Tecnología</div>
+                <h2>Soluciones Tecnológicas Integrales</h2>
+                <p class="about-lead">Equipamiento y servicios de última generación para potenciar tu productividad</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text-block">
+                    <h3>Tu Aliado Tecnológico</h3>
+                    <p>En Coteknia, entendemos que la tecnología es el corazón de tu operación. Por eso ofrecemos infraestructura y recursos tecnológicos de primer nivel que transforman tu manera de trabajar.</p>
+                    <p>No importa si eres un desarrollador, diseñador, emprendedor tech o profesional exigente: tenemos exactamente lo que necesitas para llevar tus proyectos al siguiente nivel.</p>
+                </div>
+
+                <div class="about-values">
+                    <div class="value-card">
+                        <span class="value-icon">💻</span>
+                        <h4>Equipamiento Premium</h4>
+                        <p>Computadoras de alto rendimiento, laptops y periféricos de marcas líderes configurados para cualquier necesidad profesional.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">⚡</span>
+                        <h4>Internet Ultra Rápido</h4>
+                        <p>Conexión de fibra óptica de 300+ Mbps con redundancia completa. Nunca más te preocupes por cortes o lentitud.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">🛠️</span>
+                        <h4>Software Especializado</h4>
+                        <p>Licencias de programas profesionales: Adobe Creative Cloud, Microsoft Office, AutoCAD, y más.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">🔧</span>
+                        <h4>Soporte 24/7</h4>
+                        <p>Equipo de expertos disponible en todo momento para resolver cualquier inconveniente técnico.</p>
+                    </div>
+                </div>
+
+                <div class="about-text-block">
+                    <h3>Todo Lo Que Ofrecemos</h3>
+                    <ul class="about-list">
+                        <li>✅ Estaciones de trabajo con procesadores de última generación y RAM abundante</li>
+                        <li>✅ Monitores 4K de alta precisión de color para diseño y edición</li>
+                        <li>✅ Tabletas gráficas, scanners profesionales y equipos especializados</li>
+                        <li>✅ Actualizaciones constantes de hardware y software</li>
+                        <li>✅ Sistemas de backup automático en la nube</li>
+                        <li>✅ Encriptación y seguridad de datos de primera categoría</li>
+                        <li>✅ Salas equipadas con proyectores 4K y sistemas de videoconferencia</li>
+                        <li>✅ Pizarras digitales interactivas y sistemas de audio profesional</li>
+                        <li>✅ Consultoría en transformación digital y optimización de procesos</li>
+                        <li>✅ Capacitaciones y talleres sobre nuevas tecnologías</li>
+                    </ul>
+                </div>
+
+                <div class="about-cta">
+                    <h3>¿Listo Para Potenciar Tu Trabajo?</h3>
+                    <p>Con nuestro equipamiento tecnológico de punta, reducirás tiempos, aumentarás tu productividad y te enfocarás en lo que realmente importa: crear valor.</p>
+                    <p>No pierdas más tiempo con equipos obsoletos o conexiones lentas. <strong>Únete a Coteknia hoy.</strong></p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="alert('Contáctanos pronto')">Solicitar Demo</button>
+                        <button class="btn btn-secondary" onclick="window.location.href='servicios.html'">Ver Todos los Servicios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Scripts Módulos ES6 -->
+    <script type="module">
+        import { Header } from './components/Header.js';
+        import { Footer } from './components/Footer.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new Header();
+            new Footer();
+        });
+    </script>
+</body>
+</html>

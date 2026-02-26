@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coworking - Coteknia</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Batangas&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="header"></header>
+
+    <!-- Service Detail Section -->
+    <section id="about-us" style="padding-top: 100px;">
+        <div class="container">
+            <div class="about-header">
+                <div class="about-badge">🏢 Coworking</div>
+                <h2>Espacios de Coworking Diseñados para el Éxito</h2>
+                <p class="about-lead">Un ambiente donde la productividad y la comunidad conviven en perfecta armonía</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text-block">
+                    <h3>Tu Nuevo Espacio de Trabajo</h3>
+                    <p>En Coteknia entendemos que el entorno de trabajo influye directamente en tu productividad y creatividad. Por eso diseñamos espacios modernos, cómodos e inspiradores.</p>
+                    <p>Ya seas freelancer, startup o equipo remoto, aquí encontrarás el ambiente perfecto para desarrollar tu máximo potencial rodeado de profesionales de distintas áreas.</p>
+                </div>
+
+                <div class="about-values">
+                    <div class="value-card">
+                        <span class="value-icon">🪑</span>
+                        <h4>Escritorios Flexibles</h4>
+                        <p>Desde membresías por hora hasta espacios permanentes. Adaptamos el plan perfecto a tu ritmo de trabajo.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">🚪</span>
+                        <h4>Salas Privadas</h4>
+                        <p>Oficinas pequeñas y salas de reuniones completamente equipadas para presentaciones y conferencias.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">☕</span>
+                        <h4>Áreas Comunes</h4>
+                        <p>Zonas de descanso, cafetería, cocina completa y espacios sociales ideales para networking.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">🌟</span>
+                        <h4>Diseño Moderno</h4>
+                        <p>Espacios inspiradores con luz natural abundante, plantas y una atmósfera profesional pero relajada.</p>
+                    </div>
+                </div>
+
+                <div class="about-text-block">
+                    <h3>Todo Lo Que Incluimos</h3>
+                    <ul class="about-list">
+                        <li>✅ Internet de fibra óptica de alta velocidad y estabilidad</li>
+                        <li>✅ Escritorios ergonómicos y sillas de oficina premium</li>
+                        <li>✅ Salas de reuniones con proyectores y pizarras</li>
+                        <li>✅ Cabinas telefónicas privadas para llamadas confidenciales</li>
+                        <li>✅ Servicio de limpieza y mantenimiento diario</li>
+                        <li>✅ Acceso 24/7 con sistema de seguridad</li>
+                        <li>✅ Estacionamiento disponible para miembros</li>
+                        <li>✅ Recepción de paquetes y correspondencia</li>
+                        <li>✅ Eventos mensuales: talleres, networking, conferencias</li>
+                        <li>✅ Ubicación estratégica cerca de transporte público</li>
+                    </ul>
+                </div>
+
+                <div class="about-cta">
+                    <h3>Únete a Nuestra Comunidad</h3>
+                    <p>Más que un espacio de trabajo, Coteknia es una comunidad de profesionales que comparten conocimiento, colaboran en proyectos y se impulsan mutuamente.</p>
+                    <p>Visítanos y descubre por qué somos el espacio de coworking preferido de emprendedores y profesionales. <strong>Tu escritorio te espera.</strong></p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="alert('Contáctanos pronto')">Agendar Visita</button>
+                        <button class="btn btn-secondary" onclick="window.location.href='servicios.html'">Ver Todos los Servicios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Scripts Módulos ES6 -->
+    <script type="module">
+        import { Header } from './components/Header.js';
+        import { Footer } from './components/Footer.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new Header();
+            new Footer();
+        });
+    </script>
+</body>
+</html>

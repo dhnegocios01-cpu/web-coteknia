@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Test Services</title>
+</head>
+<body>
+    <section id='services'></section>
+    <script type='module'>
+        import { Services } from './components/Services.js';
+        new Services();
+        setTimeout(() => {
+            const links = document.querySelectorAll('.btn-secondary');
+            console.log('Enlaces encontrados:', links.length);
+            links.forEach((link, i) => {
+                console.log('Link', i, ':', link.href, link.textContent);
+            });
+        }, 500);
+    </script>
+</body>
+</html>

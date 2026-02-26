@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelería - Coteknia</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Batangas&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="header"></header>
+
+    <!-- Service Detail Section -->
+    <section id="about-us" style="padding-top: 100px;">
+        <div class="container">
+            <div class="about-header">
+                <div class="about-badge">📄 Papelería</div>
+                <h2>Papelería y Suministros Premium</h2>
+                <p class="about-lead">Todo lo que necesitas para trabajar de manera eficiente y profesional</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text-block">
+                    <h3>Tu Proveedor de Confianza</h3>
+                    <p>Sabemos que los detalles importan. Por eso en Coteknia ofrecemos un catálogo completo de papelería y suministros de oficina de la más alta calidad.</p>
+                    <p>Desde estudiantes hasta grandes empresas, todos encuentran aquí exactamente lo que necesitan para sus proyectos diarios.</p>
+                </div>
+
+                <div class="about-values">
+                    <div class="value-card">
+                        <span class="value-icon">📝</span>
+                        <h4>Papel de Calidad</h4>
+                        <p>Papel de impresión en diferentes grammajes, papel fotográfico profesional y materiales especializados para tus proyectos.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">✏️</span>
+                        <h4>Útiles de Escritura</h4>
+                        <p>Bolígrafos, rotuladores, lápices y marcadores de marcas reconocidas mundialmente por su calidad.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">📁</span>
+                        <h4>Organización</h4>
+                        <p>Carpetas, archivadores, cajas de almacenamiento y sistemas completos de clasificación.</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="value-icon">🎨</span>
+                        <h4>Personalización</h4>
+                        <p>Impresión de tarjetas de presentación, membretes, sellos personalizados y materiales con tu marca.</p>
+                    </div>
+                </div>
+
+                <div class="about-text-block">
+                    <h3>Nuestro Catálogo Completo</h3>
+                    <ul class="about-list">
+                        <li>✅ Papel bond, couché, kraft y especiales en todos los tamaños</li>
+                        <li>✅ Cuadernos, libretas y agendas ejecutivas</li>
+                        <li>✅ Grapadores, perforadoras, tijeras y cutters profesionales</li>
+                        <li>✅ Adhesivos, cintas adhesivas y pegamentos de todo tipo</li>
+                        <li>✅ Carpetas con cierre, expandibles y para presentaciones</li>
+                        <li>✅ Cartulinas, papel para pósters y materiales para prototipos</li>
+                        <li>✅ Sobres de todos los tamaños y tipos</li>
+                        <li>✅ Accesorios tecnológicos: cables, adaptadores, soportes</li>
+                        <li>✅ Material de embalaje: cajas, burbujas, cintas</li>
+                        <li>✅ Servicio de entrega rápida en la ciudad</li>
+                    </ul>
+                </div>
+
+                <div class="about-cta">
+                    <h3>Simplifica Tus Compras</h3>
+                    <p>Olvídate de buscar en múltiples tiendas. En Coteknia encuentras todo en un solo lugar, con la garantía de calidad y el mejor servicio.</p>
+                    <p>Además, ofrecemos descuentos por volumen y membresías corporativas. <strong>Cotiza con nosotros hoy.</strong></p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary" onclick="alert('Contáctanos pronto')">Solicitar Cotización</button>
+                        <button class="btn btn-secondary" onclick="window.location.href='servicios.html'">Ver Todos los Servicios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Scripts Módulos ES6 -->
+    <script type="module">
+        import { Header } from './components/Header.js';
+        import { Footer } from './components/Footer.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new Header();
+            new Footer();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Coteknia</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Batangas&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about-us.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header id="header"></header>
+
+    <!-- About Us Section (Full Page) -->
+    <section id="about-us"></section>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Scripts Módulos ES6 -->
+    <script type="module">
+        import { Header } from './components/Header.js';
+        import { AboutUs } from './components/AboutUs.js';
+        import { Footer } from './components/Footer.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new Header();
+            new AboutUs();
+            new Footer();
+            console.log('✅ Página Sobre Nosotros cargada correctamente');
+        });
+    </script>
+</body>
+</html>

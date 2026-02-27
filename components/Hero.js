@@ -32,5 +32,8 @@ export class Hero {
         buttons[0].addEventListener('click', () => {
             document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
         });
+        buttons[1].addEventListener('click', () => {
+            window.location.href = 'sobre-nosotros.html';
+        });
     }
 }

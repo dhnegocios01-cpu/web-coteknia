@@ -24,8 +24,10 @@ export class Footer {
                     <div class="footer-section">
                         <h4>Servicios</h4>
                         <ul>
-                            <li><a href="tecnologia.html">Tecnología</a></li>
-                            <li><a href="papeleria.html">Papelería</a></li>
+                            <li><a href="servicios.html">Papelería y material de oficina</a></li>
+                            <li><a href="servicios.html">Servicios de impresión y acabado</a></li>
+                            <li><a href="servicios.html">Soluciones digitales y tecnología</a></li>
+                            <li><a href="servicios.html">Suministro de material gastable</a></li>
                         </ul>
                     </div>
 
@@ -33,8 +35,6 @@ export class Footer {
                         <h4>Empresa</h4>
                         <ul>
                             <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#carreras">Carreras</a></li>
                         </ul>
                     </div>
 

@@ -81,16 +81,6 @@ export class AboutUs {
                         <h3>NUESTRO EQUIPO</h3>
                         <p>En Coteknia creemos en la atención cercana y eficiente. Nuestro equipo está comprometido con brindar un servicio ágil, orientado a soluciones y con trato respetuoso y profesional.</p>
                         <p>Cada cliente es atendido con la intención de resolver su necesidad en el menor tiempo posible y con la mejor orientación.</p>
-                        <div class="team-members">
-                            <div class="team-member">
-                                <h4>Daniel Hebein</h4>
-                                <p class="team-role">Socio Fundador</p>
-                            </div>
-                            <div class="team-member">
-                                <h4>Marcelle Cruz</h4>
-                                <p class="team-role">Socia Fundadora</p>
-                            </div>
-                        </div>
                     </div>
 
                     <div class="about-cta">

@@ -27,11 +27,9 @@ export class Header {
                                 <ul class="dropdown-menu">
                                     <li><a href="departamento-arte-dibujo.html">Arte/Dibujo</a></li>
                                     <li><a href="departamento-escolar.html">Escolar</a></li>
-                                    <li><a href="departamento-escritura.html">Escritura</a></li>
                                     <li><a href="departamento-manualidades.html">Manualidades</a></li>
                                     <li><a href="departamento-mobiliario.html">Mobiliario</a></li>
                                     <li><a href="departamento-oficina.html">Oficina</a></li>
-                                    <li><a href="departamento-recreacion.html">Recreacion</a></li>
                                     <li><a href="departamento-tecnologia.html">Tecnologia</a></li>
                                 </ul>
                             </li>

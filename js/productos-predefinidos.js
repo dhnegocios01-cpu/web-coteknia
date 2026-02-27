@@ -117,65 +117,7 @@ export const productosPredefinidos = {
         { name: 'CARTULINA CHINA 50X70 SURTIDA', image: 'images/productos/placeholder.svg', description: 'Cartulina china 50x70 surtida' },
         { name: 'HOJAS BOND A4 75GR 500 HOJAS', image: 'images/productos/placeholder.svg', description: 'Resma de papel bond A4 75gr' },
         { name: 'HOJAS BOND CARTA 75GR 500 HOJAS', image: 'images/productos/placeholder.svg', description: 'Resma de papel bond carta 75gr' },
-        { name: 'HOJAS BOND OFICIO 75GR 500 HOJAS', image: 'images/productos/placeholder.svg', description: 'Resma de papel bond oficio 75gr' }
-    ],
-    
-    'arte-dibujo': [
-        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 2H', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 2H' },
-        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 4B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 4B' },
-        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 5B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 5B' },
-        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 6B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 6B' },
-        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 7B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 7B' },
-        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 8B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 8B' },
-        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL HB', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional HB' },
-        { name: 'GOMAS DE BORRAR GRANDE P20 (Artesco)', image: 'images/productos/placeholder.svg', description: 'Goma de borrar grande Artesco' },
-        { name: 'GOMAS DE BORRAR PEQUEÑA P30 (Artesco)', image: 'images/productos/placeholder.svg', description: 'Goma de borrar pequeña Artesco' },
-        { name: 'REGLA ESCALA 1/20-1/25 (ESCALIMETRO)', image: 'images/productos/placeholder.svg', description: 'Regla escalímetro profesional' },
-        { name: 'REGLAS PLASTICAS 8"20CM CLEAR (Artesco)', image: 'images/productos/placeholder.svg', description: 'Regla plástica transparente 20cm' },
-        { name: 'REGLAS PLASTICAS 12"/30CM CLEAR (Artesco)', image: 'images/productos/placeholder.svg', description: 'Regla plástica transparente 30cm' },
-        { name: 'TIJERA ESCOLAR 5" ERGONOMICA COLORES SURT.BLISTER', image: 'images/productos/placeholder.svg', description: 'Tijera escolar 5" ergonómica' },
-        { name: 'TIJERA ESCOLAR 5" LA NARANJITA', image: 'images/productos/placeholder.svg', description: 'Tijera escolar 5" La Naranjita' },
-        { name: 'TIJERA ESCOLAR 5" REBOTE (Artesco)', image: 'images/productos/placeholder.svg', description: 'Tijera escolar 5" con rebote' },
-        { name: 'TIJERA PRE ESCOLAR 4"', image: 'images/productos/placeholder.svg', description: 'Tijera segura para preescolar' },
-        { name: 'FIG FOAMY 3D ADH ANIMALES Y MAR', image: 'images/productos/placeholder.svg', description: 'Figuras foamy 3D animales y mar' },
-        { name: 'FIG FOAMY 3D ADH CORAZONES', image: 'images/productos/placeholder.svg', description: 'Figuras foamy 3D corazones' },
-        { name: 'FIG FOAMY 3D ADH CUMPLEANOS H', image: 'images/productos/placeholder.svg', description: 'Figuras foamy 3D cumpleaños' },
-        { name: 'FIG FOAMY 3D ADH LETRAS ESCARCHADAS', image: 'images/productos/placeholder.svg', description: 'Figuras foamy letras escarchadas' },
-        { name: 'FIG FOAMY ADH ABECEDARIO', image: 'images/productos/placeholder.svg', description: 'Figuras foamy abecedario' },
-        { name: 'FIG FOAMY ADH CORAZON 11X14CM', image: 'images/productos/placeholder.svg', description: 'Figuras foamy corazón 11x14cm' },
-        { name: 'FIG FOAMY ADH EMOJIS GRANDE Y BOCA', image: 'images/productos/placeholder.svg', description: 'Figuras foamy emojis grandes' },
-        { name: 'FIG FOAMY ADH FLORES', image: 'images/productos/placeholder.svg', description: 'Figuras foamy flores' },
-        { name: 'FIG FOAMY ADH LETRAS 2', image: 'images/productos/placeholder.svg', description: 'Figuras foamy letras adhesivas' },
-        { name: 'FIG FOAMY ADH MARIPOSAS', image: 'images/productos/placeholder.svg', description: 'Figuras foamy mariposas' },
-        { name: 'FIG FOAMY ESC ADH CORAZON 2', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas corazón' },
-        { name: 'FIG FOAMY ESC ADH ESTRELLA 3', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas estrellas' },
-        { name: 'FIG FOAMY ESC ADH LETRAS 2', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas letras' },
-        { name: 'FIG FOAMY ESC ADH MARIPOSAS', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas mariposas' },
-        { name: 'FIG FOAMY ESC ADH MARIPOSAS2', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas mariposas 2' },
-        { name: 'FOAMY CARTA ESC BLANCO', image: 'images/productos/placeholder.svg', description: 'Foamy carta escarchado blanco' },
-        { name: 'FOAMY CARTA ESC NEGRO', image: 'images/productos/placeholder.svg', description: 'Foamy carta escarchado negro' },
-        { name: 'FOAMY CARTA ESC PLATA', image: 'images/productos/placeholder.svg', description: 'Foamy carta escarchado plata' },
-        { name: 'FOAMY CARTA ESC ROJO', image: 'images/productos/placeholder.svg', description: 'Foamy carta escarchado rojo' },
-        { name: 'LAPICES COLOR CORTO STUD 12/1 RED', image: 'images/productos/placeholder.svg', description: 'Lápices color cortos Stud 12 unidades' },
-        { name: 'LAPICES COLOR PLASTICO LARGO STUD 12/1 CABCAP', image: 'images/productos/placeholder.svg', description: 'Lápices color plástico largo Stud 12' },
-        { name: 'LAPICES COLOR PLASTICO LARGO STUD 12/1 3466 CRIRIRA', image: 'images/productos/placeholder.svg', description: 'Lápices color plástico Stud 12' },
-        { name: 'MARCADOR MAGICO STUD 3556 AZL', image: 'images/productos/placeholder.svg', description: 'Marcador mágico Stud azul' },
-        { name: 'MAQUINA P/CORTAR TARJETAS A/JT A4', image: 'images/productos/placeholder.svg', description: 'Máquina para cortar tarjetas A4' },
-        { name: 'RESALTADOR STUD 3635 AZ. (1/12/1200)', image: 'images/productos/placeholder.svg', description: 'Resaltador Stud azul' },
-        { name: 'SACAPUNTAS DE MESA ST-30845', image: 'images/productos/placeholder.svg', description: 'Sacapuntas de mesa' },
-        { name: 'SACAPUNTAS STUMARK METAL', image: 'images/productos/placeholder.svg', description: 'Sacapuntas Stumark metálico' },
-        { name: 'SACAPUNTAS STUMARK P/CARNET', image: 'images/productos/placeholder.svg', description: 'Sacapuntas Stumark para carnet' },
-        { name: 'TIJERA STUD OHCE SHIRT SKIRT', image: 'images/productos/placeholder.svg', description: 'Tijera Stud para tela' },
-        { name: 'TIJERA STUD PROF 8" DHI SKIRT 1903', image: 'images/productos/placeholder.svg', description: 'Tijera profesional 8" Stud' },
-        { name: 'TIJERA STUD SP 4-413', image: 'images/productos/placeholder.svg', description: 'Tijera Stud SP 4-413' },
-        { name: 'TIRRO TRANS. 1/2"X24 YD', image: 'images/productos/placeholder.svg', description: 'Tirro transparente 1/2" x 24 yardas' },
-        { name: 'PEGA UHU PEQ 20ML', image: 'images/productos/placeholder.svg', description: 'Pegamento UHU pequeño 20ml' },
-        { name: 'PEGA UHU MED 60ML', image: 'images/productos/placeholder.svg', description: 'Pegamento UHU mediano 60ml' },
-        { name: 'PEGA UHU GIGANTE 125ML', image: 'images/productos/placeholder.svg', description: 'Pegamento UHU grande 125ml' },
-        { name: 'PINTURA TELA 3D COLORES 37ML', image: 'images/productos/placeholder.svg', description: 'Pintura textil 3D colores surtidos' }
-    ],
-    
-    'escritura': [
+        { name: 'HOJAS BOND OFICIO 75GR 500 HOJAS', image: 'images/productos/placeholder.svg', description: 'Resma de papel bond oficio 75gr' },
         { name: 'MARCADOR PERMANENTE 420 AZUL', image: 'images/productos/placeholder.svg', description: 'Marcador permanente azul' },
         { name: 'MARCADOR PERMANENTE 420 NEGRO', image: 'images/productos/placeholder.svg', description: 'Marcador permanente negro' },
         { name: 'MARCADOR PERMANENTE 420 VERDE', image: 'images/productos/placeholder.svg', description: 'Marcador permanente verde' },
@@ -255,6 +197,62 @@ export const productosPredefinidos = {
         { name: 'MINAS DISPLAY HB 0.9MM 24 TUBOS', image: 'images/productos/placeholder.svg', description: 'Minas HB 0.9mm display' }
     ],
     
+    'arte-dibujo': [
+        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 2H', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 2H' },
+        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 4B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 4B' },
+        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 5B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 5B' },
+        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 6B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 6B' },
+        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 7B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 7B' },
+        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL 8B', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional 8B' },
+        { name: 'LAPICES DE DIBUJO GRAFITO PROFESIONAL HB', image: 'images/productos/placeholder.svg', description: 'Lápiz de dibujo profesional HB' },
+        { name: 'GOMAS DE BORRAR GRANDE P20 (Artesco)', image: 'images/productos/placeholder.svg', description: 'Goma de borrar grande Artesco' },
+        { name: 'GOMAS DE BORRAR PEQUEÑA P30 (Artesco)', image: 'images/productos/placeholder.svg', description: 'Goma de borrar pequeña Artesco' },
+        { name: 'REGLA ESCALA 1/20-1/25 (ESCALIMETRO)', image: 'images/productos/placeholder.svg', description: 'Regla escalímetro profesional' },
+        { name: 'REGLAS PLASTICAS 8"20CM CLEAR (Artesco)', image: 'images/productos/placeholder.svg', description: 'Regla plástica transparente 20cm' },
+        { name: 'REGLAS PLASTICAS 12"/30CM CLEAR (Artesco)', image: 'images/productos/placeholder.svg', description: 'Regla plástica transparente 30cm' },
+        { name: 'TIJERA ESCOLAR 5" ERGONOMICA COLORES SURT.BLISTER', image: 'images/productos/placeholder.svg', description: 'Tijera escolar 5" ergonómica' },
+        { name: 'TIJERA ESCOLAR 5" LA NARANJITA', image: 'images/productos/placeholder.svg', description: 'Tijera escolar 5" La Naranjita' },
+        { name: 'TIJERA ESCOLAR 5" REBOTE (Artesco)', image: 'images/productos/placeholder.svg', description: 'Tijera escolar 5" con rebote' },
+        { name: 'TIJERA PRE ESCOLAR 4"', image: 'images/productos/placeholder.svg', description: 'Tijera segura para preescolar' },
+        { name: 'FIG FOAMY 3D ADH ANIMALES Y MAR', image: 'images/productos/placeholder.svg', description: 'Figuras foamy 3D animales y mar' },
+        { name: 'FIG FOAMY 3D ADH CORAZONES', image: 'images/productos/placeholder.svg', description: 'Figuras foamy 3D corazones' },
+        { name: 'FIG FOAMY 3D ADH CUMPLEANOS H', image: 'images/productos/placeholder.svg', description: 'Figuras foamy 3D cumpleaños' },
+        { name: 'FIG FOAMY 3D ADH LETRAS ESCARCHADAS', image: 'images/productos/placeholder.svg', description: 'Figuras foamy letras escarchadas' },
+        { name: 'FIG FOAMY ADH ABECEDARIO', image: 'images/productos/placeholder.svg', description: 'Figuras foamy abecedario' },
+        { name: 'FIG FOAMY ADH CORAZON 11X14CM', image: 'images/productos/placeholder.svg', description: 'Figuras foamy corazón 11x14cm' },
+        { name: 'FIG FOAMY ADH EMOJIS GRANDE Y BOCA', image: 'images/productos/placeholder.svg', description: 'Figuras foamy emojis grandes' },
+        { name: 'FIG FOAMY ADH FLORES', image: 'images/productos/placeholder.svg', description: 'Figuras foamy flores' },
+        { name: 'FIG FOAMY ADH LETRAS 2', image: 'images/productos/placeholder.svg', description: 'Figuras foamy letras adhesivas' },
+        { name: 'FIG FOAMY ADH MARIPOSAS', image: 'images/productos/placeholder.svg', description: 'Figuras foamy mariposas' },
+        { name: 'FIG FOAMY ESC ADH CORAZON 2', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas corazón' },
+        { name: 'FIG FOAMY ESC ADH ESTRELLA 3', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas estrellas' },
+        { name: 'FIG FOAMY ESC ADH LETRAS 2', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas letras' },
+        { name: 'FIG FOAMY ESC ADH MARIPOSAS', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas mariposas' },
+        { name: 'FIG FOAMY ESC ADH MARIPOSAS2', image: 'images/productos/placeholder.svg', description: 'Figuras foamy escarchadas mariposas 2' },
+        { name: 'FOAMY CARTA ESC BLANCO', image: 'images/productos/placeholder.svg', description: 'Foamy carta escarchado blanco' },
+        { name: 'FOAMY CARTA ESC NEGRO', image: 'images/productos/placeholder.svg', description: 'Foamy carta escarchado negro' },
+        { name: 'FOAMY CARTA ESC PLATA', image: 'images/productos/placeholder.svg', description: 'Foamy carta escarchado plata' },
+        { name: 'FOAMY CARTA ESC ROJO', image: 'images/productos/placeholder.svg', description: 'Foamy carta escarchado rojo' },
+        { name: 'LAPICES COLOR CORTO STUD 12/1 RED', image: 'images/productos/placeholder.svg', description: 'Lápices color cortos Stud 12 unidades' },
+        { name: 'LAPICES COLOR PLASTICO LARGO STUD 12/1 CABCAP', image: 'images/productos/placeholder.svg', description: 'Lápices color plástico largo Stud 12' },
+        { name: 'LAPICES COLOR PLASTICO LARGO STUD 12/1 3466 CRIRIRA', image: 'images/productos/placeholder.svg', description: 'Lápices color plástico Stud 12' },
+        { name: 'MARCADOR MAGICO STUD 3556 AZL', image: 'images/productos/placeholder.svg', description: 'Marcador mágico Stud azul' },
+        { name: 'MAQUINA P/CORTAR TARJETAS A/JT A4', image: 'images/productos/placeholder.svg', description: 'Máquina para cortar tarjetas A4' },
+        { name: 'RESALTADOR STUD 3635 AZ. (1/12/1200)', image: 'images/productos/placeholder.svg', description: 'Resaltador Stud azul' },
+        { name: 'SACAPUNTAS DE MESA ST-30845', image: 'images/productos/placeholder.svg', description: 'Sacapuntas de mesa' },
+        { name: 'SACAPUNTAS STUMARK METAL', image: 'images/productos/placeholder.svg', description: 'Sacapuntas Stumark metálico' },
+        { name: 'SACAPUNTAS STUMARK P/CARNET', image: 'images/productos/placeholder.svg', description: 'Sacapuntas Stumark para carnet' },
+        { name: 'TIJERA STUD OHCE SHIRT SKIRT', image: 'images/productos/placeholder.svg', description: 'Tijera Stud para tela' },
+        { name: 'TIJERA STUD PROF 8" DHI SKIRT 1903', image: 'images/productos/placeholder.svg', description: 'Tijera profesional 8" Stud' },
+        { name: 'TIJERA STUD SP 4-413', image: 'images/productos/placeholder.svg', description: 'Tijera Stud SP 4-413' },
+        { name: 'TIRRO TRANS. 1/2"X24 YD', image: 'images/productos/placeholder.svg', description: 'Tirro transparente 1/2" x 24 yardas' },
+        { name: 'PEGA UHU PEQ 20ML', image: 'images/productos/placeholder.svg', description: 'Pegamento UHU pequeño 20ml' },
+        { name: 'PEGA UHU MED 60ML', image: 'images/productos/placeholder.svg', description: 'Pegamento UHU mediano 60ml' },
+        { name: 'PEGA UHU GIGANTE 125ML', image: 'images/productos/placeholder.svg', description: 'Pegamento UHU grande 125ml' },
+        { name: 'PINTURA TELA 3D COLORES 37ML', image: 'images/productos/placeholder.svg', description: 'Pintura textil 3D colores surtidos' }
+    ],
+    
+
     'oficina': [
         { name: 'PAPEL A4 (21X 29.7 A1) DISCOVERY 500/1 (75 grs)', image: 'images/productos/placeholder.svg', description: 'Resma papel A4 Discovery 75g' },
         { name: 'PAPEL BOND 20 A4 DISCOVERY ECO 500/1 75grs', image: 'images/productos/placeholder.svg', description: 'Resma papel bond 20 A4 75g' },
@@ -410,18 +408,7 @@ export const productosPredefinidos = {
         { name: 'COLA BLANCA ESCOLAR 120ML', image: 'images/productos/placeholder.svg', description: 'Cola blanca escolar 120ml' },
         { name: 'COLA BLANCA ESCOLAR 250ML', image: 'images/productos/placeholder.svg', description: 'Cola blanca escolar 250ml' },
         { name: 'FIGURAS STICKER NAVIDAD', image: 'images/productos/placeholder.svg', description: 'Figuras sticker temática navidad' },
-        { name: 'FIGURAS STICKER CORAZONES', image: 'images/productos/placeholder.svg', description: 'Figuras sticker de corazones' }
-    ],
-    
-    'mobiliario': [
-        { name: 'ARCHIVADOR CARTA LOMO ANCHO', image: 'images/productos/placeholder.svg', description: 'Archivador carta lomo ancho' },
-        { name: 'ARCHIVADOR OFICIO LOMO ANCHO', image: 'images/productos/placeholder.svg', description: 'Archivador oficio lomo ancho' },
-        { name: 'CAJA ARCHIVO CARTA', image: 'images/productos/placeholder.svg', description: 'Caja archivo tamaño carta' },
-        { name: 'CAJA ARCHIVO OFICIO', image: 'images/productos/placeholder.svg', description: 'Caja archivo tamaño oficio' },
-        { name: 'ORGANIZADOR DE ESCRITORIO', image: 'images/productos/placeholder.svg', description: 'Organizador de escritorio' }
-    ],
-    
-    'recreacion': [
+        { name: 'FIGURAS STICKER CORAZONES', image: 'images/productos/placeholder.svg', description: 'Figuras sticker de corazones' },
         { name: 'PLASTILINA COLORES SURTIDOS X12', image: 'images/productos/placeholder.svg', description: 'Set de plastilina 12 colores' },
         { name: 'CRAYONES JUMBO X12', image: 'images/productos/placeholder.svg', description: 'Crayones jumbo caja 12' },
         { name: 'CRAYONES X24', image: 'images/productos/placeholder.svg', description: 'Crayones caja 24' },
@@ -436,7 +423,17 @@ export const productosPredefinidos = {
         { name: 'SET PLASTICINA FANCY 24 COLORES', image: 'images/productos/placeholder.svg', description: 'Set de plasticina Fancy 24 colores' },
         { name: 'CRAYONES DE CERA 12/1', image: 'images/productos/placeholder.svg', description: 'Crayones de cera 12 colores' },
         { name: 'CRAYONES DE CERA 24/1', image: 'images/productos/placeholder.svg', description: 'Crayones de cera 24 colores' }
-    ]
+    ],
+    
+    'mobiliario': [
+        { name: 'ARCHIVADOR CARTA LOMO ANCHO', image: 'images/productos/placeholder.svg', description: 'Archivador carta lomo ancho' },
+        { name: 'ARCHIVADOR OFICIO LOMO ANCHO', image: 'images/productos/placeholder.svg', description: 'Archivador oficio lomo ancho' },
+        { name: 'CAJA ARCHIVO CARTA', image: 'images/productos/placeholder.svg', description: 'Caja archivo tamaño carta' },
+        { name: 'CAJA ARCHIVO OFICIO', image: 'images/productos/placeholder.svg', description: 'Caja archivo tamaño oficio' },
+        { name: 'ORGANIZADOR DE ESCRITORIO', image: 'images/productos/placeholder.svg', description: 'Organizador de escritorio' }
+    ],
+    
+
 };
 
 // Función para cargar productos predefinidos en un departamento
@@ -451,7 +448,7 @@ export const cargarProductosPredefinidos = (categoryKey) => {
 
 // Función para cargar todos los departamentos
 export const cargarTodosLosDepartamentos = () => {
-    const departamentos = ['escolar', 'arte-dibujo', 'escritura', 'oficina', 'tecnologia', 'manualidades', 'mobiliario', 'recreacion'];
+    const departamentos = ['escolar', 'arte-dibujo', 'oficina', 'tecnologia', 'manualidades', 'mobiliario'];
     departamentos.forEach(dept => cargarProductosPredefinidos(dept));
 };
 

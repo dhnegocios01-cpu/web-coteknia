@@ -38,10 +38,12 @@
         import { Header } from './components/Header.js';
         import { Footer } from './components/Footer.js';
         import { initCatalog } from './js/catalog.js';
+        import { cargarProductosPredefinidos } from './js/productos-predefinidos.js';
 
         document.addEventListener('DOMContentLoaded', () => {
             new Header();
             new Footer();
+            cargarProductosPredefinidos('tecnologia');
             initCatalog('tecnologia');
         });
     </script>

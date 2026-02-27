@@ -14,9 +14,9 @@ CORS(app)
 # Configuración de Zoho Mail SMTP
 ZOHO_SMTP_SERVER = "smtp.zoho.com"
 ZOHO_SMTP_PORT = 587
-ZOHO_EMAIL = os.getenv('ZOHO_EMAIL', 'gerencia@grupodempha.com.do')
+ZOHO_EMAIL = os.getenv('ZOHO_EMAIL', 'coteknia@grupodempha.com.do')
 ZOHO_PASSWORD = os.getenv('ZOHO_PASSWORD', '')  # Contraseña de aplicación de Zoho
-RECIPIENT_EMAIL_CONTACT = 'gerencia@grupodempha.com.do'
+RECIPIENT_EMAIL_CONTACT = 'coteknia@grupodempha.com.do'
 RECIPIENT_EMAIL_QUOTE = 'cotizaciones@grupodempha.com.do'
 
 def send_email(subject, body, recipient_email, reply_to=None):

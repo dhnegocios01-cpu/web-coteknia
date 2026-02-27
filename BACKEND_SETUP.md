@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 5. Edita el archivo `.env` en la raíz del proyecto:
    ```
-   ZOHO_EMAIL=gerencia@grupodempha.com.do
+   ZOHO_EMAIL=coteknia@grupodempha.com.do
    ZOHO_PASSWORD=aqui_pega_tu_contraseña_de_aplicacion
    ```
 
@@ -43,7 +43,7 @@ Deberías ver algo como:
 
 Abre `index.html` en tu navegador, navega a la página de contacto y prueba los formularios.
 
-Los emails llegarán a: **gerencia@grupodempha.com.do**
+Los emails llegarán a: **coteknia@grupodempha.com.do**
 
 ## Estructura de archivos creados
 

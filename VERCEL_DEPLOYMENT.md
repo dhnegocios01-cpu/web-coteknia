@@ -43,7 +43,7 @@ https://web-coteknia.vercel.app
 - ✅ Formularios ahora usan **Formspree** (funciona en Vercel automáticamente)
 - ✅ Los emails llegarán correctamente a:
   - **Cotizaciones:** cotizaciones@grupodempha.com.do
-  - **Contacto:** gerencia@grupodempha.com.do
+  - **Contacto:** coteknia@grupodempha.com.do
 
 ## 🔧 Nota sobre Formspree
 

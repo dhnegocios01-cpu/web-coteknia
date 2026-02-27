@@ -11,7 +11,7 @@ export class Hero {
                     <div class="hero-badge">✨ Tu espacio de innovación</div>
                     <h1>
                         <span class="hero-welcome">Bienvenido a</span>
-                        <span class="hero-brand"><span class="brand-blue">C</span><span class="brand-green">o</span><span class="brand-blue">tekn</span><span class="brand-green">i</span><span class="brand-blue">a</span></span>
+                        <img src="assets/logo.png" alt="Coteknia Logo" class="hero-logo">
                     </h1>
                     <p class="hero-subtitle">
                         Tecnología y papelería en un solo lugar. 

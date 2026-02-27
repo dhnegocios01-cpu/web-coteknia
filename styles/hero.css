@@ -83,6 +83,14 @@ section#hero::after {
     text-shadow: 0 10px 28px rgba(0, 0, 0, 0.45), 0 4px 12px rgba(0, 0, 0, 0.35);
 }
 
+.hero-logo {
+    height: 120px;
+    width: auto;
+    margin-top: var(--spacing-md);
+    animation: slideInRight 0.8s ease-out 0.5s both;
+    filter: drop-shadow(0 18px 46px rgba(0, 0, 0, 0.5)) drop-shadow(0 6px 20px rgba(0, 0, 0, 0.4));
+}
+
 .hero-brand {
     font-size: 5.5rem;
     font-weight: 900;
@@ -274,6 +282,10 @@ section#hero::after {
 
     .hero-welcome {
         font-size: 1.2rem;
+    }
+
+    .hero-logo {
+        height: 80px;
     }
 
     .hero-brand {

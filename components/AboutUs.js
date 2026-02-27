@@ -8,60 +8,97 @@ export class AboutUs {
         this.aboutElement.innerHTML = `
             <div class="container">
                 <div class="about-header">
-                    <div class="about-badge">🚀 Nuestra Historia</div>
-                    <h2>Somos Coteknia</h2>
-                    <p class="about-lead">Tu aliado en la transformación digital y el espacio para crear sin límites</p>
+                    <div class="about-badge">🏢 Quiénes Somos</div>
+                    <h2>QUIÉNES SOMOS</h2>
+                    <p class="about-lead">Un espacio de soluciones prácticas, rápidas y accesibles</p>
                 </div>
 
                 <div class="about-content">
                     <div class="about-text-block">
-                        <h3>Nace una Visión</h3>
-                        <p>En un mundo donde la tecnología avanza a la velocidad de la luz, decidimos crear un espacio diferente. No solo ofrecemos herramientas; ofrecemos un <strong>ecosistema completo</strong> donde tu creatividad y profesionalismo convergen.</p>
-                        <p>Coteknia nace de la necesidad de unir tres mundos: la <strong>tecnología de punta</strong>, los <strong>recursos que necesitas cada día</strong> y un <strong>ambiente colaborativo</strong> donde las ideas fluyen naturalmente.</p>
+                        <p>Coteknia es un espacio de papelería, tecnología y soluciones digitales creado para ofrecer respuestas prácticas, rápidas y accesibles en un solo lugar.</p>
+                        
+                        <p>Nacemos con la visión de convertirnos en el punto de apoyo para estudiantes, profesionales, emprendedores y negocios de la zona, facilitando el acceso a material gastable, impresión y servicios digitales sin necesidad de desplazarse largas distancias.</p>
+                        
+                        <p><strong>Más que una tienda, somos un centro de soluciones.</strong></p>
+                    </div>
+
+                    <div class="mission-vision-values">
+                        <div class="mvv-card">
+                            <h3>MISIÓN</h3>
+                            <p>Brindar soluciones integrales en papelería, impresión y tecnología, ofreciendo productos y servicios de calidad con atención cercana, rápida y confiable para nuestra comunidad.</p>
+                        </div>
+                        <div class="mvv-card">
+                            <h3>VISIÓN</h3>
+                            <p>Convertirnos en el centro de referencia en la zona para servicios de papelería y soluciones digitales, destacándonos por eficiencia, innovación y compromiso con nuestros clientes.</p>
+                        </div>
+                        <div class="mvv-card mvv-card-wide">
+                            <h3>VALORES</h3>
+                            <ul class="values-list">
+                                <li><strong>Servicio:</strong> Atención cercana y resolutiva.</li>
+                                <li><strong>Responsabilidad:</strong> Cumplimos lo que prometemos.</li>
+                                <li><strong>Eficiencia:</strong> Respuestas rápidas y procesos ágiles.</li>
+                                <li><strong>Calidad:</strong> Productos y servicios confiables.</li>
+                                <li><strong>Compromiso local:</strong> Apoyo a profesionales y emprendedores de la zona.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="about-values">
                         <div class="value-card">
-                            <span class="value-icon">💡</span>
-                            <h4>Innovación</h4>
-                            <p>Buscamos estar siempre a la vanguardia, anticipando lo que necesitarás mañana.</p>
+                            <span class="value-icon">📄</span>
+                            <h4>Papelería</h4>
+                            <p>Material gastable y suministros de calidad para todas tus necesidades.</p>
                         </div>
                         <div class="value-card">
-                            <span class="value-icon">🤝</span>
-                            <h4>Comunidad</h4>
-                            <p>Creemos en la fuerza de trabajar juntos, compartiendo conocimiento y experiencias.</p>
+                            <span class="value-icon">💻</span>
+                            <h4>Tecnología</h4>
+                            <p>Equipos, accesorios y soluciones tecnológicas al alcance de tu mano.</p>
                         </div>
                         <div class="value-card">
-                            <span class="value-icon">✨</span>
-                            <h4>Excelencia</h4>
-                            <p>Cada detalle, cada servicio, cada interacción refleja nuestro compromiso con la calidad.</p>
+                            <span class="value-icon">🖨️</span>
+                            <h4>Impresión</h4>
+                            <p>Servicios de impresión rápidos y de calidad para tus documentos y proyectos.</p>
                         </div>
                         <div class="value-card">
-                            <span class="value-icon">🎯</span>
-                            <h4>Accesibilidad</h4>
-                            <p>Creemos que el éxito debe estar al alcance de todos, sin importar tu presupuesto.</p>
+                            <span class="value-icon">🌐</span>
+                            <h4>Soluciones Digitales</h4>
+                            <p>Servicios digitales modernos sin necesidad de largos desplazamientos.</p>
                         </div>
                     </div>
 
                     <div class="about-text-block">
-                        <h3>¿Por Qué Coteknia?</h3>
-                        <p>Porque no queremos que busques en diez lugares diferentes lo que nosotros te ofrecemos en uno. Aquí encontrarás:</p>
+                        <h3>¿A Quién Servimos?</h3>
                         <ul class="about-list">
-                            <li>✅ Equipamiento tecnológico de última generación</li>
-                            <li>✅ Papelería y suministros de calidad premium</li>
-                            <li>✅ Espacios diseñados para la productividad</li>
-                            <li>✅ Comunidad de emprendedores y profesionales</li>
-                            <li>✅ Soporte y asesoramiento personalizado</li>
+                            <li>✅ Estudiantes que necesitan material y recursos para sus estudios</li>
+                            <li>✅ Profesionales que buscan eficiencia en su día a día</li>
+                            <li>✅ Emprendedores que requieren respuestas rápidas</li>
+                            <li>✅ Negocios de la zona que necesitan un proveedor confiable</li>
+                            <li>✅ Cualquier persona que valore la accesibilidad y la practicidad</li>
                         </ul>
                     </div>
 
+                    <div class="about-text-block">
+                        <h3>NUESTRO EQUIPO</h3>
+                        <p>En Coteknia creemos en la atención cercana y eficiente. Nuestro equipo está comprometido con brindar un servicio ágil, orientado a soluciones y con trato respetuoso y profesional.</p>
+                        <p>Cada cliente es atendido con la intención de resolver su necesidad en el menor tiempo posible y con la mejor orientación.</p>
+                        <div class="team-members">
+                            <div class="team-member">
+                                <h4>Daniel Hebein</h4>
+                                <p class="team-role">Socio Fundador</p>
+                            </div>
+                            <div class="team-member">
+                                <h4>Marcelle Cruz</h4>
+                                <p class="team-role">Socia Fundadora</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="about-cta">
-                        <h3>Eres Parte de Esto</h3>
-                        <p>Cada cliente, cada coworker, cada visitante es parte de la historia de Coteknia. Nos impulsan tus ideas, tus sueños y tu determinación de crecer.</p>
-                        <p>Si buscas un lugar donde tu potencial se multiplique, donde tu creatividad encuentre las herramientas que necesita y donde la colaboración es más que una palabra... <strong>bienvenido a casa.</strong></p>
+                        <h3>Tu Centro de Soluciones</h3>
+                        <p>En Coteknia encontrarás todo lo que necesitas sin complicaciones. Estamos aquí para facilitarte el acceso a los recursos que te hacen avanzar.</p>
                         <div class="cta-buttons">
                             <button class="btn btn-primary">Visítanos Hoy</button>
-                            <button class="btn btn-secondary">Saber Más</button>
+                            <button class="btn btn-secondary">Ver Servicios</button>
                         </div>
                     </div>
                 </div>

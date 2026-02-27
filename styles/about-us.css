@@ -130,6 +130,70 @@ section#about-us::after {
     font-weight: bold;
 }
 
+/* Misión, Visión y Valores */
+.mission-vision-values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xxl);
+}
+
+.mvv-card {
+    background: rgba(255, 255, 255, 0.93);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(24, 0, 173, 0.18);
+    box-shadow: 0 18px 50px rgba(12, 17, 30, 0.1);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.mvv-card-wide {
+    grid-column: 1 / -1;
+}
+
+.mvv-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 60px rgba(24, 0, 173, 0.16);
+    border-color: rgba(0, 191, 99, 0.4);
+}
+
+.mvv-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+}
+
+.mvv-card p {
+    color: #1f2735;
+    line-height: 1.8;
+    margin: 0;
+    letter-spacing: 0.01em;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.values-list li {
+    color: #1f2735;
+    padding: var(--spacing-sm);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.values-list li strong {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
 /* Valores */
 .about-values {
     display: grid;
@@ -302,6 +366,43 @@ section#about-us::after {
     }
 }
 
+/* Equipo */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.team-member {
+    background: rgba(24, 0, 173, 0.06);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(24, 0, 173, 0.15);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.team-member:hover {
+    background: rgba(24, 0, 173, 0.1);
+    border-color: rgba(0, 191, 99, 0.4);
+    transform: translateY(-4px);
+}
+
+.team-member h4 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.team-role {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     section#about-us {
@@ -323,6 +424,14 @@ section#about-us::after {
 
     .about-text-block h3 {
         font-size: 1.5rem;
+    }
+
+    .mission-vision-values {
+        grid-template-columns: 1fr;
+    }
+
+    .values-list {
+        grid-template-columns: 1fr;
     }
 
     .about-values {

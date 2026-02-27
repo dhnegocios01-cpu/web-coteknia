@@ -14,7 +14,7 @@ export class Hero {
                         <span class="hero-brand"><span class="brand-blue">C</span><span class="brand-green">o</span><span class="brand-blue">tekn</span><span class="brand-green">i</span><span class="brand-blue">a</span></span>
                     </h1>
                     <p class="hero-subtitle">
-                        Tecnología, papelería y coworking en un solo lugar. 
+                        Tecnología y papelería en un solo lugar. 
                         <br>Todo lo que necesitas para trabajar, crear y crecer.
                     </p>
                     <div class="hero-buttons">

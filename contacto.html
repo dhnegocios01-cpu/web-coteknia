@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Coteknia</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Batangas&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/variables.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <span class="contact-badge">📞 Contacto</span>
+                <h2>¿Cómo podemos ayudarte?</h2>
+                <p>Estamos aquí para responder tus preguntas y resolver tus necesidades</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-forms">
+                    <div class="form-card">
+                        <h3>Cotizaciones</h3>
+                        <p class="form-description">Envía tu listado de productos a cotizar con nosotros.</p>
+                        <p class="form-email">Para cotizaciones: <strong>cotizaciones@grupodempha.com.do</strong></p>
+                        
+                        <form class="contact-form" id="quoteForm">
+                            <div class="form-group">
+                                <label for="quoteRnc">Número de RNC<span class="required">*</span></label>
+                                <input id="quoteRnc" name="rnc" type="text" placeholder="000-0000000-0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteCompany">Nombre de la empresa<span class="required">*</span></label>
+                                <input id="quoteCompany" name="company" type="text" placeholder="Tu empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteMessage">Detalle de productos</label>
+                                <textarea id="quoteMessage" name="message" rows="4" placeholder="Lista de productos que deseas cotizar"></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Solicitar Cotización</button>
+                        </form>
+                    </div>
+
+                    <div class="form-card">
+                        <h3>Formulario de contacto</h3>
+                        <p class="form-description">¿Tienes alguna pregunta o comentario? Escríbenos.</p>
+                        
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="contactName">Nombre<span class="required">*</span></label>
+                                <input id="contactName" name="name" type="text" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Correo electrónico<span class="required">*</span></label>
+                                <input id="contactEmail" name="email" type="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Número de teléfono</label>
+                                <input id="contactPhone" name="phone" type="tel" placeholder="(809) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactComment">Comentario<span class="required">*</span></label>
+                                <textarea id="contactComment" name="comment" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <a href="https://www.google.com/maps/place/Coteknia/@18.5920676,-68.4002754,1476m/data=!3m2!1e3!4b1!4m6!3m5!1s0x8ea8937f37eb398f:0x747e7070d205e275!8m2!3d18.5920625!4d-68.3977005!16s%2Fg%2F11yvbmxf8c?entry=ttu&g_ep=EgoyMDI2MDIyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="info-card info-card-clickable">
+                        <div class="info-icon">📍</div>
+                        <h4>Ubicación</h4>
+                        <p>Punta Cana, República Dominicana<br><small>Ver en Google Maps</small></p>
+                    </a>
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:gerencia@grupodempha.com.do">gerencia@grupodempha.com.do</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/18097260270" target="_blank">(809) 726-0270</a></p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <h4>Horarios</h4>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script type="module">
+        import { Header } from './components/Header.js';
+        import { Footer } from './components/Footer.js';
+
+        document.addEventListener('DOMContentLoaded', () => {
+            new Header();
+            new Footer();
+        });
+    </script>
+</head>
+<body>
+    <header id="header"></header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <span class="contact-badge">📞 Contacto</span>
+                <h2>¿Cómo podemos ayudarte?</h2>
+                <p>Estamos aquí para responder tus preguntas y resolver tus necesidades</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-forms">
+                    <div class="form-card">
+                        <h3>Cotizaciones</h3>
+                        <p class="form-description">Envía tu listado de productos a cotizar con nosotros.</p>
+                        <p class="form-email">Para cotizaciones: <strong>cotizaciones@grupodempha.com.do</strong></p>
+                        
+                        <form class="contact-form" action="https://formspree.io/f/mqazyqkd" method="POST">
+                            <div class="form-group">
+                                <label for="quoteRnc">Número de RNC<span class="required">*</span></label>
+                                <input id="quoteRnc" name="rnc" type="text" placeholder="000-0000000-0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteCompany">Nombre de la empresa<span class="required">*</span></label>
+                                <input id="quoteCompany" name="company" type="text" placeholder="Tu empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteMessage">Detalle de productos</label>
+                                <textarea id="quoteMessage" name="message" rows="4" placeholder="Lista de productos que deseas cotizar"></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Solicitar Cotización</button>
+                        </form>
+                    </div>
+
+                    <div class="form-card">
+                        <h3>Formulario de contacto</h3>
+                        <p class="form-description">¿Tienes alguna pregunta o comentario? Escríbenos.</p>
+                        
+                        <form class="contact-form" action="https://formspree.io/f/meoqbqyd" method="POST">
+                            <div class="form-group">
+                                <label for="contactName">Nombre<span class="required">*</span></label>
+                                <input id="contactName" name="name" type="text" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Correo electrónico<span class="required">*</span></label>
+                                <input id="contactEmail" name="email" type="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Número de teléfono</label>
+                                <input id="contactPhone" name="phone" type="tel" placeholder="(809) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactComment">Comentario<span class="required">*</span></label>
+                                <textarea id="contactComment" name="comment" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+</body>
+</html>

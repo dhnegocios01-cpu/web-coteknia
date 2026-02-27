@@ -41,14 +41,6 @@
                                 <input id="quoteCompany" name="company" type="text" placeholder="Tu empresa" required>
                             </div>
                             <div class="form-group">
-                                <label for="quoteEmail">Correo electrónico<span class="required">*</span></label>
-                                <input id="quoteEmail" name="email" type="email" placeholder="tu@email.com" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="quotePhone">Teléfono<span class="required">*</span></label>
-                                <input id="quotePhone" name="phone" type="tel" placeholder="(809) 000-0000" required>
-                            </div>
-                            <div class="form-group">
                                 <label for="quoteMessage">Detalle de productos</label>
                                 <textarea id="quoteMessage" name="message" rows="4" placeholder="Lista de productos que deseas cotizar"></textarea>
                             </div>
@@ -117,90 +109,76 @@
         document.addEventListener('DOMContentLoaded', () => {
             new Header();
             new Footer();
-
-            // Formulario de cotizaciones
-            const quoteForm = document.getElementById('quoteForm');
-            const quoteBtn = quoteForm.querySelector('button[type="submit"]');
-            
-            quoteForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                
-                quoteBtn.disabled = true;
-                quoteBtn.textContent = 'Enviando...';
-                
-                try {
-                    const response = await fetch('/api/send-email', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            type: 'quote',
-                            rnc: document.getElementById('quoteRnc').value,
-                            company: document.getElementById('quoteCompany').value,
-                            email: document.getElementById('quoteEmail').value,
-                            phone: document.getElementById('quotePhone').value,
-                            message: document.getElementById('quoteMessage').value
-                        })
-                    });
-
-                    const data = await response.json();
-
-                    if (data.success) {
-                        alert('✅ Cotización enviada correctamente. Te contactaremos pronto.');
-                        quoteForm.reset();
-                    } else {
-                        alert('❌ Error: ' + data.error);
-                    }
-                } catch (error) {
-                    alert('❌ Error al enviar: ' + error.message);
-                } finally {
-                    quoteBtn.disabled = false;
-                    quoteBtn.textContent = 'Solicitar Cotización';
-                }
-            });
-
-            // Formulario de contacto
-            const contactForm = document.getElementById('contactForm');
-            const contactBtn = contactForm.querySelector('button[type="submit"]');
-            
-            contactForm.addEventListener('submit', async (e) => {
-                e.preventDefault();
-                
-                contactBtn.disabled = true;
-                contactBtn.textContent = 'Enviando...';
-                
-                try {
-                    const response = await fetch('/api/send-email', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            type: 'contact',
-                            name: document.getElementById('contactName').value,
-                            email: document.getElementById('contactEmail').value,
-                            phone: document.getElementById('contactPhone').value,
-                            comment: document.getElementById('contactComment').value
-                        })
-                    });
-
-                    const data = await response.json();
-
-                    if (data.success) {
-                        alert('✅ Mensaje enviado correctamente. Te responderemos a la brevedad.');
-                        contactForm.reset();
-                    } else {
-                        alert('❌ Error: ' + data.error);
-                    }
-                } catch (error) {
-                    alert('❌ Error al enviar: ' + error.message);
-                } finally {
-                    contactBtn.disabled = false;
-                    contactBtn.textContent = 'Enviar Mensaje';
-                }
-            });
         });
     </script>
+</head>
+<body>
+    <header id="header"></header>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <span class="contact-badge">📞 Contacto</span>
+                <h2>¿Cómo podemos ayudarte?</h2>
+                <p>Estamos aquí para responder tus preguntas y resolver tus necesidades</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-forms">
+                    <div class="form-card">
+                        <h3>Cotizaciones</h3>
+                        <p class="form-description">Envía tu listado de productos a cotizar con nosotros.</p>
+                        <p class="form-email">Para cotizaciones: <strong>cotizaciones@grupodempha.com.do</strong></p>
+                        
+                        <form class="contact-form" action="https://formspree.io/f/mqazyqkd" method="POST">
+                            <div class="form-group">
+                                <label for="quoteRnc">Número de RNC<span class="required">*</span></label>
+                                <input id="quoteRnc" name="rnc" type="text" placeholder="000-0000000-0" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteCompany">Nombre de la empresa<span class="required">*</span></label>
+                                <input id="quoteCompany" name="company" type="text" placeholder="Tu empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteEmail">Correo electrónico<span class="required">*</span></label>
+                                <input id="quoteEmail" name="email" type="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quotePhone">Teléfono<span class="required">*</span></label>
+                                <input id="quotePhone" name="phone" type="tel" placeholder="(809) 000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="quoteMessage">Detalle de productos</label>
+                                <textarea id="quoteMessage" name="message" rows="4" placeholder="Lista de productos que deseas cotizar"></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Solicitar Cotización</button>
+                        </form>
+                    </div>
+
+                    <div class="form-card">
+                        <h3>Formulario de contacto</h3>
+                        <p class="form-description">¿Tienes alguna pregunta o comentario? Escríbenos.</p>
+                        
+                        <form class="contact-form" action="https://formspree.io/f/meoqbqyd" method="POST">
+                            <div class="form-group">
+                                <label for="contactName">Nombre<span class="required">*</span></label>
+                                <input id="contactName" name="name" type="text" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Correo electrónico<span class="required">*</span></label>
+                                <input id="contactEmail" name="email" type="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Número de teléfono</label>
+                                <input id="contactPhone" name="phone" type="tel" placeholder="(809) 000-0000">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactComment">Comentario<span class="required">*</span></label>
+                                <textarea id="contactComment" name="comment" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
 </body>
 </html>

@@ -1,6 +1,18 @@
 const nodemailer = require('nodemailer');
 
-const transporter = nodemailer.createTransport({
+// Transporter para cotizaciones
+const transporterQuote = nodemailer.createTransport({
+    host: 'smtp.zoho.com',
+    port: 587,
+    secure: false,
+    auth: {
+        user: 'cotizaciones@grupodempha.com.do',
+        pass: 'SUUnSKZHSCBS'
+    }
+});
+
+// Transporter para contacto
+const transporterContact = nodemailer.createTransport({
     host: 'smtp.zoho.com',
     port: 587,
     secure: false,
@@ -19,11 +31,13 @@ module.exports = async (req, res) => {
         const { type, rnc, company, email, phone, message, name, comment } = req.body;
 
         let mailOptions;
+        let transporter;
 
         if (type === 'quote') {
             // Formulario de cotizaciones
+            transporter = transporterQuote;
             mailOptions = {
-                from: 'coteknia@grupodempha.com.do',
+                from: 'cotizaciones@grupodempha.com.do',
                 to: 'cotizaciones@grupodempha.com.do',
                 subject: `Nueva Solicitud de Cotización - ${company}`,
                 html: `
@@ -44,6 +58,7 @@ module.exports = async (req, res) => {
             };
         } else if (type === 'contact') {
             // Formulario de contacto
+            transporter = transporterContact;
             mailOptions = {
                 from: 'coteknia@grupodempha.com.do',
                 to: 'coteknia@grupodempha.com.do',

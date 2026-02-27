@@ -119,7 +119,9 @@
 
 .catalog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* Keep consistent card widths across all departments, even with few items */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 220px));
+    justify-content: center;
     gap: var(--spacing-lg);
 }
 
@@ -158,6 +160,7 @@
     margin: 0;
     color: #111827;
     font-size: 1.05rem;
+    min-height: 2.8em;
 }
 
 .product-price {
@@ -169,6 +172,7 @@
 .product-description {
     font-size: 0.9rem;
     color: #2a3242;
+    min-height: 2.7em;
 }
 
 .product-actions {
@@ -196,7 +200,8 @@
     }
 
     .catalog-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(180px, 180px));
+        justify-content: center;
     }
 }
 

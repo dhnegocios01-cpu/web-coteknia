@@ -50,6 +50,8 @@ def handle_quote():
         data = request.json
         rnc = data.get('rnc', '')
         company = data.get('company', '')
+        email = data.get('email', '')
+        phone = data.get('phone', '')
         message = data.get('message', '')
         
         subject = f"Nueva Solicitud de Cotización - {company}"
@@ -60,6 +62,8 @@ def handle_quote():
                 <div style="background-color: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
                     <p><strong>RNC:</strong> {rnc}</p>
                     <p><strong>Empresa:</strong> {company}</p>
+                    <p><strong>Email:</strong> {email}</p>
+                    <p><strong>Teléfono:</strong> {phone}</p>
                     <p><strong>Detalle de productos:</strong></p>
                     <div style="background-color: white; padding: 15px; border-radius: 4px; margin-top: 10px;">
                         {message.replace('\n', '<br>')}
@@ -73,7 +77,7 @@ def handle_quote():
         </html>
         """
         
-        if send_email(subject, body, RECIPIENT_EMAIL_QUOTE):
+        if send_email(subject, body, RECIPIENT_EMAIL_QUOTE, reply_to=email):
             return jsonify({'success': True, 'message': 'Cotización enviada correctamente'})
         else:
             return jsonify({'success': False, 'message': 'Error al enviar la cotización'}), 500

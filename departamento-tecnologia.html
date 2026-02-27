@@ -21,39 +21,14 @@
             <div class="catalog-header">
                 <span class="catalog-badge">Departamento</span>
                 <h2>Tecnologia</h2>
-                <p>Sube materiales para venta con su foto y precio en esta categoria.</p>
+                <p>Catálogo de productos de tecnología disponibles.</p>
             </div>
 
-            <div class="catalog-layout">
-                <form class="catalog-form" id="catalogForm">
-                    <h3>Nuevo producto</h3>
-                    <div class="form-group">
-                        <label for="productName">Nombre</label>
-                        <input id="productName" name="productName" type="text" placeholder="Ej: Memoria USB 64GB" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="productPrice">Precio</label>
-                        <input id="productPrice" name="productPrice" type="text" placeholder="Ej: RD$ 650" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="productImageUrl">Foto (URL)</label>
-                        <input id="productImageUrl" name="productImageUrl" type="url" placeholder="https://">
-                        <span class="form-hint">Si no tienes URL, carga una foto desde tu equipo.</span>
-                    </div>
-                    <div class="form-group">
-                        <label for="productImageFile">Foto (archivo)</label>
-                        <input id="productImageFile" name="productImageFile" type="file" accept="image/*">
-                    </div>
-                    <div class="form-group">
-                        <label for="productDescription">Descripcion (opcional)</label>
-                        <textarea id="productDescription" name="productDescription" rows="3" placeholder="Detalles del producto"></textarea>
-                    </div>
-                    <div id="catalogError" class="form-error"></div>
-                    <button class="btn btn-primary" type="submit">Agregar producto</button>
-                </form>
-
-                <div class="catalog-grid" id="catalogGrid"></div>
+            <div class="catalog-search">
+                <input type="text" id="searchInput" placeholder="Buscar producto por nombre...">
             </div>
+
+            <div class="catalog-grid" id="catalogGrid"></div>
         </div>
     </section>
 

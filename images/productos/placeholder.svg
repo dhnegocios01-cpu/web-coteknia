@@ -1,0 +1,26 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f8f9ff"/>
+  
+  <!-- Main box icon -->
+  <g transform="translate(100, 80)">
+    <!-- Box -->
+    <rect x="20" y="60" width="160" height="120" fill="none" stroke="#1800ad" stroke-width="3" rx="5"/>
+    <line x1="20" y1="100" x2="180" y2="100" stroke="#1800ad" stroke-width="3"/>
+    <line x1="100" y1="60" x2="100" y2="180" stroke="#1800ad" stroke-width="3"/>
+    
+    <!-- Tape strips -->
+    <rect x="90" y="60" width="20" height="120" fill="#00bf63" opacity="0.3"/>
+    <rect x="20" y="90" width="160" height="20" fill="#00bf63" opacity="0.3"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="275" font-family="Arial, sans-serif" font-size="18" fill="#1800ad" text-anchor="middle" font-weight="bold">
+    Foto próximamente
+  </text>
+  
+  <!-- Coteknia logo text -->
+  <text x="200" y="310" font-family="Batangas, Arial, sans-serif" font-size="24" fill="#00bf63" text-anchor="middle" font-weight="bold">
+    COTEKNIA
+  </text>
+</svg>

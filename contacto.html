@@ -31,7 +31,7 @@
                         <p class="form-description">Envía tu listado de productos a cotizar con nosotros.</p>
                         <p class="form-email">Para cotizaciones: <strong>cotizaciones@grupodempha.com.do</strong></p>
                         
-                        <form class="contact-form" action="https://formspree.io/f/mqazyqkd" method="POST">
+                        <form class="contact-form" id="quoteForm">
                             <div class="form-group">
                                 <label for="quoteRnc">Número de RNC<span class="required">*</span></label>
                                 <input id="quoteRnc" name="rnc" type="text" placeholder="000-0000000-0" required>
@@ -60,7 +60,7 @@
                         <h3>Formulario de contacto</h3>
                         <p class="form-description">¿Tienes alguna pregunta o comentario? Escríbenos.</p>
                         
-                        <form class="contact-form" action="https://formspree.io/f/meoqbqyd" method="POST">
+                        <form class="contact-form" id="contactForm">
                             <div class="form-group">
                                 <label for="contactName">Nombre<span class="required">*</span></label>
                                 <input id="contactName" name="name" type="text" placeholder="Tu nombre" required>
@@ -117,6 +117,60 @@
         document.addEventListener('DOMContentLoaded', () => {
             new Header();
             new Footer();
+
+            // Formulario de cotizaciones
+            const quoteForm = document.getElementById('quoteForm');
+            quoteForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const rnc = document.getElementById('quoteRnc').value;
+                const company = document.getElementById('quoteCompany').value;
+                const email = document.getElementById('quoteEmail').value;
+                const phone = document.getElementById('quotePhone').value;
+                const message = document.getElementById('quoteMessage').value;
+                
+                const subject = `Solicitud de Cotización - ${company}`;
+                const body = `RNC: ${rnc}
+Empresa: ${company}
+Email: ${email}
+Teléfono: ${phone}
+
+Detalle de productos:
+${message}`;
+                
+                window.location.href = `mailto:cotizaciones@grupodempha.com.do?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                
+                setTimeout(() => {
+                    alert('Se abrirá tu cliente de correo para enviarnos la cotización.');
+                    quoteForm.reset();
+                }, 500);
+            });
+
+            // Formulario de contacto
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const name = document.getElementById('contactName').value;
+                const email = document.getElementById('contactEmail').value;
+                const phone = document.getElementById('contactPhone').value;
+                const comment = document.getElementById('contactComment').value;
+                
+                const subject = `Mensaje de contacto - ${name}`;
+                const body = `Nombre: ${name}
+Email: ${email}
+Teléfono: ${phone}
+
+Mensaje:
+${comment}`;
+                
+                window.location.href = `mailto:coteknia@grupodempha.com.do?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                
+                setTimeout(() => {
+                    alert('Se abrirá tu cliente de correo para enviarnos el mensaje.');
+                    contactForm.reset();
+                }, 500);
+            });
         });
     </script>
 </body>
